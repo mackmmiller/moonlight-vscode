@@ -1,0 +1,29 @@
+{
+  "name": "moonlight-theme",
+  "version": "0.0.1",
+  "displayName": "Moonlight Theme",
+  "publisher": "mackmmiller",
+  "description": "A port of atomiks' moonlight-theme for VS Code",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Moonlight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/moonlight.json"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "nodemon --exec vsce package"
+  },
+  "author": "Mackenzie Miller",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "vsce": "^1.40.0"
+  }
+}
